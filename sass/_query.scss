@@ -1,0 +1,14 @@
+/* TABLETTE */
+@media (min-width: $mediumDevice) {
+  .fonctionnement{
+    padding: 50px 22px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* ORDINATEUR */
+@media (min-width: $largeDevice) {
+
+}

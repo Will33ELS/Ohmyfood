@@ -55,6 +55,50 @@ header .logo img {
   text-decoration: none;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 22px;
+}
+.fonctionnement h2 {
+  flex: 100%;
+}
+.fonctionnement-card {
+  display: flex;
+  align-content: center;
+  background-color: #f6f6f6;
+  margin: 25px 0;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #e5e5e5;
+  font-weight: 600;
+  transition: all 0.8s;
+}
+.fonctionnement-card i {
+  color: #787878;
+  margin-right: 20px;
+}
+.fonctionnement-card:hover {
+  background-color: #f5edff;
+}
+.fonctionnement-card:hover i {
+  color: #9356dc;
+}
+.fonctionnement-number {
+  background-color: #9356dc;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 13px;
+  margin: 25px 0 0 -13px;
+}
+.fonctionnement-text {
+  padding: 30px 0 30px 40px;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -81,6 +125,16 @@ footer .footer-content ul li a:hover {
   text-decoration: none;
 }
 
+/* TABLETTE */
+@media (min-width: 768px) {
+  .fonctionnement {
+    padding: 50px 22px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
+/* ORDINATEUR */
 .list-nostyle {
   list-style: none;
   margin: 0;
