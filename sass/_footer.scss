@@ -1,0 +1,25 @@
+footer{
+  background-color: #353535;
+  color: white;
+  .footer-content{
+    padding: 26px 0 38px 26px;
+    ul{
+      margin-top: 20px;
+      li{
+        padding-bottom: 10px;
+        i{
+          margin-right: 10px;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+          transition: color 0.2s;
+          &:hover{
+            color: $secondary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shirkhand", cursive;
+}
+
+header {
+  text-align: center;
+  box-shadow: 0 3px 3px #cecece;
+  margin-bottom: 3px;
+}
+header .logo {
+  padding: 12px 0;
+}
+header .logo img {
+  height: 31px;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  text-align: center;
+  color: #575757;
+  font-size: 16px;
+}
+.localisation i {
+  margin-right: 20px;
+}
+.localisation-text {
+  padding: 20px 0;
+}
+
+.reservation {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.reservation-content {
+  padding: 45px 20px 60px 20px;
+}
+.reservation-content h1 {
+  font-size: 1.7em;
+}
+.reservation-content p {
+  color: #4d4d4d;
+  margin-bottom: 40px;
+}
+.reservation-button {
+  background: linear-gradient(#eb73d9, #9f5adc);
+  padding: 18px 22px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+footer .footer-content {
+  padding: 26px 0 38px 26px;
+}
+footer .footer-content ul {
+  margin-top: 20px;
+}
+footer .footer-content ul li {
+  padding-bottom: 10px;
+}
+footer .footer-content ul li i {
+  margin-right: 10px;
+}
+footer .footer-content ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+footer .footer-content ul li a:hover {
+  color: #FF79DA;
+  text-decoration: none;
+}
+
+.list-nostyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map */
