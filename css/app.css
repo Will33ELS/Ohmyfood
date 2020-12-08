@@ -13,12 +13,27 @@ header {
   text-align: center;
   box-shadow: 0 3px 3px #cecece;
   margin-bottom: 3px;
+  position: relative;
 }
 header .logo {
   padding: 12px 0;
 }
 header .logo img {
   height: 31px;
+}
+header .return {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+header .return:hover, header .return:active {
+  color: black;
+  text-decoration: none;
 }
 
 .localisation {
@@ -233,6 +248,9 @@ footer .footer-content ul li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+  .restaurant h2 {
+    text-align: center;
   }
   .restaurant-card {
     width: 45%;
