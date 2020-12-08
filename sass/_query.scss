@@ -6,6 +6,20 @@
     text-align: center;
     margin: auto;
   }
+  .restaurant{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-card{
+      width: 45%;
+      margin: 0 0 30px 30px;
+    }
+    &-description{
+      &-text {
+        width: 85%;
+      }
+    }
+  }
 }
 
 /* ORDINATEUR */

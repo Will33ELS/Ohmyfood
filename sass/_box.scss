@@ -52,7 +52,7 @@
       color: #787878;
       margin-right: 20px;
     }
-    transition: all 0.8s;
+    transition: all 0.6s;
     &:hover{
       background-color: #f5edff;
       i{
@@ -74,5 +74,101 @@
   }
   &-text{
     padding: 30px 0 30px 40px;
+  }
+}
+
+.restaurant{
+  background-color: #f6f6f6;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  h2{
+    flex: 100%;
+    margin-bottom: 25px;
+  }
+  &-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+    transition: transform 0.2s;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+  &-img{
+    position: relative;
+    height: 170px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 4px 4px 4px #e5e5e5;
+    }
+  }
+  &-badge{
+    position: absolute;
+    right: 0;
+    background-color: $tertiaire;
+    color: #008765;
+    padding: 6px;
+    margin: 15px 10px 0 0;
+    font-weight: bold;
+  }
+  &-description{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 4px 4px 4px #e5e5e5;
+    z-index: 1;
+    &-text{
+      width: 70%;
+      margin: 20px 0 0 15px;
+      p{
+        width: 100%;
+        margin: 18px 0 20px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    &-icon{
+      margin: auto;
+      z-index: 2;
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: none;
+          i::before{
+            opacity: 1;
+          }
+          i::after{
+            opacity: 0;
+          }
+        }
+      }
+      i{
+        &::before{
+          content: "";
+          opacity: 0;
+          transition: opacity 0.4s;
+          background: -webkit-gradient(linear, left top, left bottom, from(#eb73d9), to(#9f5adc));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+          display: block;
+          position: absolute;
+        }
+        &::after{
+          content: "";
+          transition: opacity 0.4s;
+        }
+      }
+    }
   }
 }
