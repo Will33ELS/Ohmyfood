@@ -3,6 +3,9 @@ header{
   box-shadow: 0 3px 3px #cecece;
   margin-bottom: 3px;
   position: relative;
+  &.no-margin{
+    margin-bottom: 0;
+  }
   .logo{
     padding: 12px 0;
     img{

@@ -23,6 +23,19 @@
       }
     }
   }
+  .menu{
+    &-restaurant{
+      justify-content: center;
+      &-icon{
+        justify-items: end;
+        width: 50px;
+      }
+    }
+    &-content{
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
 }
 
 /* ORDINATEUR */

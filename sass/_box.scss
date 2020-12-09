@@ -24,13 +24,14 @@
       margin-bottom: 40px;
     }
   }
-  &-button{
-    background: linear-gradient(#eb73d9, #9f5adc);
-    padding: 18px 22px;
-    border-radius: 50px;
-    color: white;
-    text-decoration: none;
-  }
+}
+
+.button{
+  background: linear-gradient(#eb73d9, #9f5adc);
+  padding: 18px 22px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
 }
 
 .fonctionnement{
@@ -140,35 +141,119 @@
     &-icon{
       margin: auto;
       z-index: 2;
+      @include heart-icon;
+    }
+  }
+}
+
+.menu{
+  background-color: #f6f6f6;
+  &-header{
+    height: 200px;
+    position: relative;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &-restaurant{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: end;
+    background-color: #f6f6f6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 50px;
+    line-height: 50px;
+    padding: 15px 0 0 0;
+    width: 100%;
+    text-align: center;
+    &-icon{
+      @include heart-icon;
       a{
-        text-decoration: none;
-        &:hover{
-          text-decoration: none;
-          i::before{
-            opacity: 1;
-          }
-          i::after{
-            opacity: 0;
-          }
-        }
-      }
-      i{
-        &::before{
-          content: "";
-          opacity: 0;
-          transition: opacity 0.4s;
-          background: -webkit-gradient(linear, left top, left bottom, from(#eb73d9), to(#9f5adc));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-          display: block;
-          position: absolute;
-        }
-        &::after{
-          content: "";
-          transition: opacity 0.4s;
-        }
+        font-size: 22px;
+        margin: auto;
       }
     }
+  }
+  &-content{
+    padding: 20px 15px;
+    opacity: 0;
+    animation: show-menu 1s 3s both;
+  }
+  &-group{
+    margin-top: 10px;
+    &-type{
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    display: flex;
+    flex-direction: column;
+    &-item{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: white;
+      margin: 7px 0;
+      padding: 15px 0 15px 15px;
+      border-radius: 20px;
+      box-shadow: 0 3px 3px #cecece;
+      opacity: 0;
+    }
+    @for $i from 1 through 30 {
+      &-item:nth-child(#{$i}n) {
+        animation: 1s display-item #{3 + $i * 0.5}s both;
+      }
+    }
+  }
+  &-commander{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .button{
+      padding: 18px 50px;
+    }
+  }
+}
+
+.plat{
+  &-description{
+    width: 100%;
+    &-titre{
+      width: 80%;
+      font-size: 0.9em;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    p{
+      width: 80%;
+      margin: 4px 0 0 0;
+      font-size: 0.8em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  &-prix{
+    align-self: flex-end;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+}
+
+.loading{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+  animation: waiting-spinner linear 3s both;
+  i{
+    animation: rotate 1s both infinite;
   }
 }
