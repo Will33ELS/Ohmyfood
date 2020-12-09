@@ -199,11 +199,38 @@
       flex-direction: row;
       justify-content: space-between;
       background-color: white;
+      overflow: hidden;
       margin: 7px 0;
       padding: 15px 0 15px 15px;
       border-radius: 20px;
       box-shadow: 0 3px 3px #cecece;
       opacity: 0;
+      &-check{
+        margin: -15px 0;
+        background-color: $tertiaire;
+        width: 80px;
+        color: white;
+        transform: translateX(80px);
+        transition: transform 0.8s;
+        text-align: center;
+        &-i{
+          transform: translateY(-50%);
+          margin-top: 50%;
+        }
+      }
+      i{
+        transition: transform 0.8s;
+        font-size: 18px;
+      }
+      &:hover .menu-group-item-check{
+        transform: translateX(0)
+      }
+      &:hover i{
+        transform: rotate(-360deg);
+      }
+      &:hover .plat-prix{
+        transform: translateX(0);
+      }
     }
     @for $i from 1 through 30 {
       &-item:nth-child(#{$i}n) {
@@ -245,6 +272,8 @@
     align-self: flex-end;
     font-weight: bold;
     margin-right: 30px;
+    transform: translateX(50px);
+    transition: transform 0.8s;
   }
 }
 
