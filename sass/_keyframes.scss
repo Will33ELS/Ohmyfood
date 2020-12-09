@@ -1,9 +1,11 @@
+// Disparition du spinner
 @keyframes waiting-spinner {
   to{
     opacity: 0;
   }
 }
 
+// Affichage du menu
 @keyframes show-menu {
   from{
     opacity: 0;
@@ -14,12 +16,14 @@
   }
 }
 
+// Rotation du spinner
 @keyframes rotate {
   to{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 
+// Affichage des plats du menu
 @keyframes display-item {
   0%{ opacity: 0; }
   100%{ opacity: 1 }

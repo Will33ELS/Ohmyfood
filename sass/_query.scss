@@ -1,4 +1,4 @@
-/* TABLETTE */
+/* Version TABLETTE et plus */
 @media (min-width: $mediumDevice) {
   .fonctionnement{
     padding: 50px 22px;
@@ -36,9 +36,4 @@
       width: 70%;
     }
   }
-}
-
-/* ORDINATEUR */
-@media (min-width: $largeDevice) {
-
 }

@@ -1,3 +1,5 @@
+// SECTION Localisation page index
+
 .localisation{
   background-color: #eaeaea;
   text-align: center;
@@ -10,6 +12,8 @@
     padding: 20px 0;
   }
 }
+
+// SECTION Réservation page index
 
 .reservation{
   text-align: center;
@@ -26,13 +30,7 @@
   }
 }
 
-.button{
-  background: linear-gradient(#eb73d9, #9f5adc);
-  padding: 18px 22px;
-  border-radius: 50px;
-  color: white;
-  text-decoration: none;
-}
+// SECTION Fonctionnement page index
 
 .fonctionnement{
   display: flex;
@@ -77,6 +75,8 @@
     padding: 30px 0 30px 40px;
   }
 }
+
+// SECTION Restaurants page index
 
 .restaurant{
   background-color: #f6f6f6;
@@ -145,6 +145,8 @@
     }
   }
 }
+
+// SECTION menu page Restaurant
 
 .menu{
   background-color: #f6f6f6;
@@ -248,6 +250,8 @@
   }
 }
 
+// Description des plats
+
 .plat{
   &-description{
     width: 100%;
@@ -276,6 +280,8 @@
     transition: transform 0.8s;
   }
 }
+
+// SECTION Utilisé lors du chargement du menu
 
 .loading{
   margin-top: 30px;
