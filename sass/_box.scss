@@ -213,7 +213,7 @@
         width: 80px;
         color: white;
         transform: translateX(80px);
-        transition: transform 0.8s;
+        transition: transform 0.4s;
         text-align: center;
         &-i{
           transform: translateY(-50%);
@@ -221,7 +221,7 @@
         }
       }
       i{
-        transition: transform 0.8s;
+        transition: transform 0.4s;
         font-size: 18px;
       }
       &:hover .menu-group-item-check{
@@ -277,7 +277,7 @@
     font-weight: bold;
     margin-right: 30px;
     transform: translateX(50px);
-    transition: transform 0.8s;
+    transition: transform 0.4s;
   }
 }
 
