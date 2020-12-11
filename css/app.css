@@ -220,25 +220,27 @@ header .return:hover, header .return:active {
   text-decoration: none;
 }
 .restaurant-description-icon a:hover i::before {
-  opacity: 1;
+  transform: scale(1);
 }
 .restaurant-description-icon a:hover i::after {
   opacity: 0;
 }
 .restaurant-description-icon i::before {
   content: "";
-  opacity: 0;
-  transition: opacity 0.4s;
   background: -webkit-gradient(linear, left top, left bottom, from(#eb73d9), to(#9f5adc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   display: block;
   position: absolute;
+  font-size: 22px;
+  transform: scale(0);
+  transition: transform 0.3s;
 }
 .restaurant-description-icon i::after {
+  font-size: 22px;
   content: "";
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
 }
 
 .menu {
@@ -277,25 +279,27 @@ header .return:hover, header .return:active {
   text-decoration: none;
 }
 .menu-restaurant-icon a:hover i::before {
-  opacity: 1;
+  transform: scale(1);
 }
 .menu-restaurant-icon a:hover i::after {
   opacity: 0;
 }
 .menu-restaurant-icon i::before {
   content: "";
-  opacity: 0;
-  transition: opacity 0.4s;
   background: -webkit-gradient(linear, left top, left bottom, from(#eb73d9), to(#9f5adc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   display: block;
   position: absolute;
+  font-size: 22px;
+  transform: scale(0);
+  transition: transform 0.3s;
 }
 .menu-restaurant-icon i::after {
+  font-size: 22px;
   content: "";
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
 }
 .menu-restaurant-icon a {
   font-size: 22px;
@@ -538,7 +542,7 @@ footer .footer-content ul li a:hover {
     margin: 0 0 30px 30px;
   }
   .restaurant-description-text {
-    width: 85%;
+    width: 80%;
   }
 
   .menu-restaurant {

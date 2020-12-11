@@ -1,4 +1,4 @@
-//
+// Effet coeurs
 @mixin heart-icon{
   a{
     color: black;
@@ -6,7 +6,7 @@
     &:hover{
       text-decoration: none;
       i::before{
-        opacity: 1;
+        transform: scale(1);
       }
       i::after{
         opacity: 0;
@@ -16,18 +16,20 @@
   i{
     &::before{
       content: "";
-      opacity: 0;
-      transition: opacity 0.4s;
       background: -webkit-gradient(linear, left top, left bottom, from(#eb73d9), to(#9f5adc));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;
       display: block;
       position: absolute;
+      font-size: 22px;
+      transform: scale(0);
+      transition: transform 0.3s;
     }
     &::after{
+      font-size: 22px;
       content: "";
-      transition: opacity 0.4s;
+      transition: opacity 0.3s;
     }
   }
 }
