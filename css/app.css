@@ -235,7 +235,7 @@ header .return:hover, header .return:active {
   position: absolute;
   font-size: 22px;
   transform: scale(0);
-  transition: transform 0.3s;
+  transition: transform 0.3s cubic-bezier(0, 0.26, 0.41, 1);
 }
 .restaurant-description-icon i::after {
   font-size: 22px;
@@ -294,7 +294,7 @@ header .return:hover, header .return:active {
   position: absolute;
   font-size: 22px;
   transform: scale(0);
-  transition: transform 0.3s;
+  transition: transform 0.3s cubic-bezier(0, 0.26, 0.41, 1);
 }
 .menu-restaurant-icon i::after {
   font-size: 22px;
