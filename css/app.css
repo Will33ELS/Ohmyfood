@@ -340,10 +340,9 @@ header .return:hover, header .return:active {
   transform: translateX(80px);
   transition: transform 0.4s;
   text-align: center;
-}
-.menu-group-item-check-i {
-  transform: translateY(-50%);
-  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .menu-group-item i {
   transition: transform 0.4s;

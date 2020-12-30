@@ -215,10 +215,9 @@
         transform: translateX(80px);
         transition: transform 0.4s;
         text-align: center;
-        &-i{
-          transform: translateY(-50%);
-          margin-top: 50%;
-        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
       }
       i{
         transition: transform 0.4s;
