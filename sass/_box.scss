@@ -51,8 +51,9 @@
       color: #787878;
       margin-right: 20px;
     }
-    transition: all 0.6s;
+    transition: all 0.3s;
     &:hover{
+      cursor: pointer;
       background-color: #f5edff;
       i{
         color: #9356dc;
