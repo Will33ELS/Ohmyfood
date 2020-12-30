@@ -223,6 +223,9 @@
         transition: transform 0.4s;
         font-size: 18px;
       }
+      &:hover{
+        cursor: pointer;
+      }
       &:hover .menu-group-item-check{
         transform: translateX(0)
       }
