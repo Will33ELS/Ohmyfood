@@ -348,6 +348,9 @@ header .return:hover, header .return:active {
   transition: transform 0.4s;
   font-size: 18px;
 }
+.menu-group-item:hover {
+  cursor: pointer;
+}
 .menu-group-item:hover .menu-group-item-check {
   transform: translateX(0);
 }
