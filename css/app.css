@@ -150,6 +150,10 @@ header .return:hover, header .return:active {
 .restaurant {
   background-color: #f6f6f6;
   padding: 60px 30px;
+}
+.restaurant-content {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -533,7 +537,7 @@ footer .footer-content ul li a:hover {
     margin: auto;
   }
 
-  .restaurant {
+  .restaurant-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
