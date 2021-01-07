@@ -156,6 +156,8 @@ header .return:hover, header .return:active {
   padding: 60px 30px;
 }
 .restaurant-content {
+  opacity: 0;
+  animation: show-menu 1s 3s both;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -562,7 +564,7 @@ footer .footer-content h3 {
     margin: 0 0 30px 30px;
   }
   .restaurant-description-text {
-    width: 80%;
+    width: 100%;
   }
 
   .menu-restaurant {
