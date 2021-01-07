@@ -365,9 +365,6 @@ header .return:hover, header .return:active {
 .menu-group-item:hover {
   cursor: pointer;
 }
-.menu-group-item:hover .plat-description {
-  width: 80%;
-}
 .menu-group-item:hover .menu-group-item-check {
   transform: translateX(0);
 }
@@ -478,6 +475,7 @@ header .return:hover, header .return:active {
 
 .plat-description {
   overflow: hidden;
+  width: 85%;
 }
 .plat-description-titre {
   font-size: 0.9em;
