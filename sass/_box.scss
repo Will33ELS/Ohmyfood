@@ -23,6 +23,7 @@
     padding: 45px 20px 60px 20px;
     h1{
       font-size: 1.7em;
+      font-weight: 800;
     }
     p{
       color: #4d4d4d;
@@ -40,6 +41,7 @@
   h2{
     flex: 100%;
     margin-bottom: 22px;
+    font-weight: 600;
   }
   &-card{
     display: flex;
@@ -93,6 +95,7 @@
   h2{
     flex: 100%;
     margin-bottom: 25px;
+    font-weight: 600;
   }
   &-card{
     position: relative;

@@ -40,7 +40,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
+.menu-restaurant-title {
   font-family: "Shirkhand", cursive;
 }
 
@@ -97,6 +97,7 @@ header .return:hover, header .return:active {
 }
 .reservation-content h1 {
   font-size: 1.7em;
+  font-weight: 800;
 }
 .reservation-content p {
   color: #4d4d4d;
@@ -111,6 +112,7 @@ header .return:hover, header .return:active {
 .fonctionnement h2 {
   flex: 100%;
   margin-bottom: 22px;
+  font-weight: 600;
 }
 .fonctionnement-card {
   display: flex;
@@ -162,6 +164,7 @@ header .return:hover, header .return:active {
 .restaurant h2 {
   flex: 100%;
   margin-bottom: 25px;
+  font-weight: 600;
 }
 .restaurant-card {
   position: relative;
