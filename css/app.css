@@ -40,7 +40,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Shirkhand", cursive;
 }
 
@@ -116,7 +116,7 @@ header .return:hover, header .return:active {
   display: flex;
   align-content: center;
   background-color: #f6f6f6;
-  margin: 10px 0;
+  margin: 13px 0;
   border-radius: 20px;
   box-shadow: 4px 4px 14px #e5e5e5;
   font-weight: 600;
@@ -207,14 +207,17 @@ header .return:hover, header .return:active {
 }
 .restaurant-description-text {
   width: 70%;
-  margin: 20px 0 0 15px;
+  margin: 12px 0 0 15px;
 }
 .restaurant-description-text p {
   width: 100%;
-  margin: 18px 0 20px 0;
+  margin: 7px 0 15px 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.restaurant-description-text h3 {
+  font-weight: 800;
 }
 .restaurant-description-icon {
   margin: auto;
