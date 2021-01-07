@@ -240,9 +240,6 @@
       &:hover{
         cursor: pointer;
       }
-      &:hover .plat-description{
-        width: 80%;
-      }
       &:hover .menu-group-item-check{
         transform: translateX(0)
       }
@@ -274,6 +271,7 @@
 .plat{
   &-description{
     overflow: hidden;
+    width: 90%;
     &-titre{
       font-size: 0.9em;
       font-weight: bold;
