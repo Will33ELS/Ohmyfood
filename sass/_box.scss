@@ -87,6 +87,8 @@
   background-color: #f6f6f6;
   padding: 60px 30px;
   &-content{
+    opacity: 0;
+    animation: show-menu 1s 3s both;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
