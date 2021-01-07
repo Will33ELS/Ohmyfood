@@ -165,7 +165,7 @@ header .return:hover, header .return:active {
 }
 .restaurant h2 {
   flex: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
   font-weight: 600;
 }
 .restaurant-card {
@@ -557,6 +557,7 @@ footer .footer-content h3 {
     flex-wrap: wrap;
   }
   .restaurant h2 {
+    margin-bottom: 50px;
     text-align: center;
   }
   .restaurant-card {
