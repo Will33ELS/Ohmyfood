@@ -365,6 +365,9 @@ header .return:hover, header .return:active {
 .menu-group-item:hover {
   cursor: pointer;
 }
+.menu-group-item:hover .plat-description {
+  width: 80%;
+}
 .menu-group-item:hover .menu-group-item-check {
   transform: translateX(0);
 }
@@ -474,11 +477,9 @@ header .return:hover, header .return:active {
 }
 
 .plat-description {
-  width: 100%;
   overflow: hidden;
 }
 .plat-description-titre {
-  width: 80%;
   font-size: 0.9em;
   font-weight: bold;
   overflow: hidden;
@@ -486,7 +487,6 @@ header .return:hover, header .return:active {
   text-overflow: ellipsis;
 }
 .plat-description p {
-  width: 80%;
   margin: 4px 0 0 0;
   font-size: 0.8em;
   overflow: hidden;
