@@ -54,7 +54,7 @@ header.no-margin {
   margin-bottom: 0;
 }
 header .logo {
-  padding: 12px 0;
+  padding: 18px 0 8px 0;
 }
 header .logo img {
   height: 31px;
@@ -343,7 +343,7 @@ header .return:hover, header .return:active {
   margin: 7px 0;
   padding: 15px 0 15px 15px;
   border-radius: 20px;
-  box-shadow: 0 3px 3px #cecece;
+  box-shadow: 0 3px 10px #e5e5e5;
   opacity: 0;
 }
 .menu-group-item-check {
@@ -475,6 +475,7 @@ header .return:hover, header .return:active {
 
 .plat-description {
   width: 100%;
+  overflow: hidden;
 }
 .plat-description-titre {
   width: 80%;

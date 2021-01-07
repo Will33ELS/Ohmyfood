@@ -219,7 +219,7 @@
       margin: 7px 0;
       padding: 15px 0 15px 15px;
       border-radius: 20px;
-      box-shadow: 0 3px 3px #cecece;
+      box-shadow: 0 3px 10px #e5e5e5;
       opacity: 0;
       &-check{
         margin: -15px 0;
@@ -271,6 +271,7 @@
 .plat{
   &-description{
     width: 100%;
+    overflow: hidden;
     &-titre{
       width: 80%;
       font-size: 0.9em;
